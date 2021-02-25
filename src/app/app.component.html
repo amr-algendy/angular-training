@@ -1,0 +1,15 @@
+<div class="container">
+	<div class="row mt-2">
+		<div class="col-12">
+			<app-game-control (tick)="OnTick($event)"></app-game-control>
+		</div>
+	</div>
+	<div class="row mt-2">
+		<div class="col-6">
+			<app-even *ngFor="let elem of evenArr" [entry]="elem"></app-even>
+		</div>
+		<div class="col-6">
+			<app-odd *ngFor="let elem of oddArr" [entry]="elem"></app-odd>
+		</div>
+	</div>
+</div>
